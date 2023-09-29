@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foundation Intro</title>
+	<link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="fun.html">About Me</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                <!-- `grid-x` represents a row -->
+                <br>
+                <button type="button" class="large-auto" data-toggle="offCanvas"><img height="40em" width="40em" src="menu.png" alt="Menu"></button>
+                <div class="grid-x grid-padding-x">
+                    <p class="cell auto"></p>
+                    <h1 class="text-center">Projects</h1>
+                    <p class="cell auto"></p>
+                </div>
+                <br>
+                <br>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell large-auto medium-12 small-12">
+                        <h2 class="text-center">Stock Analysis Program</h2>
+                        <div class="text-center"><img src="stockanalysis.png" alt="University of Saint Thomas"></div>
+                        <br>
+                        <p class="text-center">This program allows the user to search a database of over 5000 stocks and gives a recommendation to buy based on various different ratios. When these ratios are compared to the industry average it gives an idea if the stock is a good buy or not.</p>
+                    </div>
+                    <div class="large-1"></div>
+                    <div class="cell large-auto medium-12 small-12">
+                        <h2 class="text-center">War Simulator App</h2>
+                        <div class="text-center"><img src="warapp.png" alt="University of Saint Thomas"></div>
+                        <br>
+                        <p class="text-center">This app is a simulator for the war card game. I created this app while learning the basics of app design through XCode.</p>
+                    </div>
+                    <div class="cell large-12 medium-12 small-12">
+                        <h2 class="text-center">Coffee Shop Checkout</h2>
+                        <div class="text-center"><img src="menu1.png" alt="University of Saint Thomas"></div>
+                        <div class="text-center"><img src="menu2.png" alt="University of Saint Thomas"></div>
+                        <br>
+                        <p class="text-center">This program is a makeshift menu for a coffee shop. You can purchase various different items with addons and they will be added to your cart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
